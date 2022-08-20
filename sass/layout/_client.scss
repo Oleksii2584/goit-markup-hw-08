@@ -1,0 +1,38 @@
+.client-title{
+  font-family: 'Roboto';
+  font-style: normal;
+  @include font (36px, 700, 1.17);
+
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  margin-bottom: 50px;}
+.client-list{
+  display: flex;
+  gap: 30px;
+}
+
+.client-link{
+@extend %align;
+width: 170px;
+height: 92px;
+border:1px solid #AFB1B8;
+border-radius: 4%;
+background-color: #FFFFFF;
+transition: border var(--transition);
+    &:hover,
+    &:focus{
+      border:1px solid var(--main-color);
+  }
+}
+
+
+.client-link-ikon{
+fill: #AFB1B8;
+transition: fill var(--transition);
+    .client-link:hover &,
+    .client-link:focus &{
+      fill: var(--main-color);
+    }
+}
+  
