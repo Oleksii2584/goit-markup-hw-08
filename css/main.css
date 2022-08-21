@@ -106,7 +106,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .container {
-    width: 450px;
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -594,6 +594,7 @@ button:hover, button:focus {
 .hero {
   background-color: #2F303A;
   height: 400px;
+  width: 100%;
   padding: 118px 0;
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/mobile-img/header-mobile.jpg);
