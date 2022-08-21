@@ -100,13 +100,13 @@ img {
 .container {
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .container {
     width: 450px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -156,6 +156,10 @@ img {
     padding-left: 25px;
     padding-top: 48px;
     padding-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
   }
   .mobile-menu-close {
     position: absolute;
@@ -167,6 +171,10 @@ img {
     border: none;
     background-color: transparent;
     transition: border-color var(--transition);
+  }
+  .mobile-menu-close:hover, .mobile-menu-close:focus {
+    background-color: transparent;
+    fill: var(--main-color);
   }
   .mobile-menu__list {
     font-family: "Roboto";
@@ -180,6 +188,55 @@ img {
     margin-bottom: 32px;
   }
 }
+.mobail-menu-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.mobile-menu-contact__tel {
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+}
+
+.mobile-menu-contact__mail {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+}
+
+.mobail-menu-social {
+  display: flex;
+  gap: 20px;
+}
+
+.mobile-menu-social__list {
+  position: relative;
+}
+
+.mobile-menu-social__list:not(:last-child)::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -10px;
+  height: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobail-menu-social__link {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+}
+
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
@@ -392,10 +449,6 @@ button:hover, button:focus {
 
 .navigate {
   color: var(--accent-color);
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  padding: 32px 0;
   letter-spacing: 0.02em;
   transition: color var(--transition);
   position: relative;
@@ -434,6 +487,10 @@ button:hover, button:focus {
     height: 40px;
     padding: 12px 8px;
   }
+  .mobile-menu-open:hover, .mobile-menu-open:focus {
+    background-color: transparent;
+    fill: var(--main-color);
+  }
   .navigate {
     font-size: 40px;
     font-weight: 500;
@@ -450,12 +507,18 @@ button:hover, button:focus {
   .head-block {
     padding: 0;
   }
+  .navigate {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    padding: 32px 0;
+  }
   .current.navigate::after {
     content: "";
     display: block;
     width: 100%;
     height: 4px;
-    margin-bottom: -4px;
+    margin-bottom: 4px;
     background-color: var(--main-color);
     border-radius: 2px;
     position: absolute;
