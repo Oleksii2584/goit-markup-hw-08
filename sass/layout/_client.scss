@@ -1,12 +1,12 @@
 .client-title{
+  @include font (28px, 700, 1.17);
+  margin-bottom: 30px;
   font-family: 'Roboto';
   font-style: normal;
-  @include font (36px, 700, 1.17);
-
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  margin-bottom: 50px;}
+}
 .client-list{
   display: flex;
   gap: 30px;
@@ -14,8 +14,6 @@
 
 .client-link{
 @extend %align;
-width: 170px;
-height: 92px;
 border:1px solid #AFB1B8;
 border-radius: 4%;
 background-color: #FFFFFF;
@@ -36,3 +34,31 @@ transition: fill var(--transition);
     }
 }
   
+@media screen and (max-width: 767px){
+    .client-list{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .client-link{
+        width: 210px;
+        height: 92px;}
+    }
+  
+@media screen and (min-width: 768px){
+  .client-list{
+    flex-wrap: wrap;
+  }
+  .client-link{
+      width: 226px;
+      height: 92px;}
+
+}
+  
+@media screen and (min-width: 1200px){
+  .client-title{
+    @include font (36px, 700, 1.17);
+    margin-bottom: 50px;}
+    .client-link{
+      width: 170px;
+      height: 92px;}
+  }
