@@ -1229,6 +1229,7 @@ button:hover, button:focus {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--accent-color);
+  margin-bottom: 4px;
 }
 
 .portfolio-main-menu__text {
