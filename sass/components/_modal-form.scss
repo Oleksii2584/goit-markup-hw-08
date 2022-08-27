@@ -5,7 +5,8 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  margin-bottom: 12px;}
+  margin-bottom: 12px;
+}
 
 .modal-form {
   display: flex;
@@ -77,9 +78,10 @@
 .modal-form-check-desc {
   display: flex;
   align-items: center;
-  font-size: 14px;
+  font-size: 12px;
+  // font-size: 14px;
   margin-bottom: 30px;
-  margin-left: 12px;
+  // margin-left: 12px;
   color: #757575;
       &::before {
       display: block;
@@ -128,4 +130,12 @@ color: var(--main-color);}
       &:focus {
           background-color: background-color #188CE8;
       }
+}
+
+@media screen and (min-width:1200px) {
+
+  .modal-form-check-desc {
+    font-size: 14px;
+    margin-left: 12px;}
+   
 }

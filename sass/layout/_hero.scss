@@ -1,25 +1,23 @@
-.hero{ 
+ .hero{ 
     background-color: #2F303A;
     height: 400px;
     width: 100%;
     padding: 118px 0;
     text-align: center;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-     rgba(47, 48, 58, 0.4)),
-    url(../../img/mobile-img/header-mobile.jpg);
+      rgba(47, 48, 58, 0.4)), url(../../img/mobile-img/header-mobile.jpg);
     background-size: cover;
     }
-
-  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-    screen and (min-resolution: 192dpi) and (max-width: 767px),
-    screen and (min-resolution: 2dppx) and (max-width: 767px){
-      .hero{
-      background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)),
-      url(../../img/mobile-img/header-mobile2x.jpg);
-      }
+  
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px){
+    .hero{
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url(../../img/mobile-img/header-mobile2x.jpg);
     }
-
+  }
 
   .hero-title{
     text-transform: uppercase;
