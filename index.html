@@ -181,15 +181,20 @@
         <ul class="work-list">
           <li>
             <div class="work-block">
-              <img src="./img/box/box_1.jpg" 
-              alt="box_1" width="370" height="294"/>
+              <img 
+              srcset="./img/desktop/box/box_1x2.jpg 2x"
+              src="./img/desktop/box/box_1.jpg" 
+              alt="box_1" width="370" height="294"
+              />
               <p class="work-overlay">Десктопные приложения</p>
             </div>
             
           </li>
           <li>
             <div class="work-block">
-              <img src="./img/box/box_2.jpg" 
+              <img 
+              srcset="./img/desktop/box/box_2x2.jpg 2x"
+              src="./img/desktop/box/box_2.jpg" 
             alt="box_2" width="370" height="294" />
               <p class="work-overlay">Мобильные приложения</p>
             </div>
@@ -197,7 +202,9 @@
           </li>
           <li>
             <div class="work-block">
-              <img src="./img/box/box_3.jpg" 
+              <img 
+              srcset="./img/desktop/box/box_3x2.jpg 2x "
+              src="./img/desktop/box/box_3.jpg" 
             alt="box_3" width="370" height="294" />
               <p class="work-overlay">Дизайнерские решения</p>
             </div>
@@ -212,7 +219,20 @@
           <h2 class="team">Наша команда</h2>
           <ul class="team-list">
             <li class="team-block">
-              <img src="./img/people/img.jpg" alt="Игорь Демьяненко" class="team-block__img" />
+              <picture>
+                <source 
+                srcset="./img/desktop/people/img.jpg 1x, ./img/desktop/people/img2x.jpg 2x" 
+                media="(min-width: 1200px)" />
+                <source 
+                srcset="./img/img-tablet/people/img-tab.jpg 1x, ./img/img-tablet/people/img-tab2x.jpg 2x" 
+                media="(min-width: 768px)" />
+                <source 
+                srcset="./img/mobile-img/people/img-mobile.jpg 1x, ./img/mobile-img/people/img-mobile-x2.jpg 2x" 
+                media="(max-width: 767px)" />
+
+                <img src="./img/desktop/people/img.jpg" alt="Игорь Демьяненко" class="team-block__img" />
+
+              </picture>
               <div class="text-blok">
                 <h3 class="team-title">Игорь Демьяненко</h3>
                 <p lang="en" class="team-p">Product Designer</p>
@@ -249,7 +269,19 @@
               </div>
             </li>
             <li class="team-block">
-              <img src="./img/people/img2.jpg" alt="Ольга Репина" class="team-block__img" />
+              <picture>
+                <source 
+                srcset="./img/desktop/people/img2.jpg 1x, ./img/desktop/people/img2x2.jpg 2x" 
+                media="(min-width: 1200px)" />
+                <source 
+                srcset="./img/img-tablet/people/img2tab.jpg 1x, ./img/img-tablet/people/img2tab2x.jpg 2x" 
+                media="(min-width: 768px)" />
+                <source 
+                srcset="./img/mobile-img/people/img-mobile2.jpg 1x, ./img/mobile-img/people/img-mobile2x2.jpg 2x" 
+                media="(max-width: 767px)" />
+                <img src="./img/desktop/people/img2.jpg" alt="Ольга Репина" class="team-block__img" />
+
+              </picture>
               <div class="text-blok">
                 <h3 class="team-title">Ольга Репина</h3>
                 <p lang="en" class="team-p">Frontend Developer</p>
@@ -286,7 +318,19 @@
               </div>
             </li>
             <li class="team-block">
-              <img src="./img/people/img3.jpg" alt="Николай Тарасов" class="team-block__img" />
+              <picture>
+                <source 
+                srcset="./img/desktop/people/img3.jpg 1x, ./img/desktop/people/img3x2.jpg 2x" 
+                media="(min-width: 1200px)" />
+                <source 
+                srcset="./img/img-tablet/people/img3tab.jpg 1x, ./img/img-tablet/people/img3tab2x.jpg 2x" 
+                media="(min-width: 768px)" />
+                <source 
+                srcset="./img/mobile-img/people/img-mobile3.jpg 1x, ./img/mobile-img/people/img-mobile3x2.jpg 2x" 
+                media="(max-width: 767px)" />
+                <img src="./img/desktop/people/img3.jpg" alt="Николай Тарасов" class="team-block__img" />
+
+              </picture>
               <div class="text-blok">
                 <h3 class="team-title">Николай Тарасов</h3>
                 <p lang="en" class="team-p">Marketing</p>
@@ -323,7 +367,19 @@
               </div>
             </li>
             <li class="team-block">
-              <img src="./img/people/img4.jpg" alt="Михаил Ермаков" class="team-block__img" />
+              <picture>
+                <source 
+                srcset="./img/desktop/people/img4.jpg 1x, ./img/desktop/people/img4x2.jpg 2x" 
+                media="(min-width: 1200px)" />
+                <source 
+                srcset="./img/img-tablet/people/img4tab.jpg 1x, ./img/img-tablet/people/img4tab2x.jpg 2x" 
+                media="(min-width: 768px)" />
+                <source 
+                srcset="./img/mobile-img/people/img-mobile4.jpg 1x, ./img/mobile-img/people/img-mobile4x2.jpg 2x" 
+                media="(max-width: 767px)" />
+                <img src="./img/desktop/people/img4.jpg" alt="Михаил Ермаков" class="team-block__img" />
+
+              </picture>
               <div class="text-blok">
                 <h3 class="team-title">Михаил Ермаков</h3>
                 <p lang="en" class="team-p">UI Designer</p>

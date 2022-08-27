@@ -24,13 +24,13 @@
           <li class="page-nav__list">
             <a href="./index.html"
             target="_blank"
-            rel="noopener noreferrer" class="navigate current">
+            rel="noopener noreferrer" class="navigate">
             Студия</a>
           </li>
           <li class="page-nav__list">
             <a href="./portfolio.html"
             target="_blank"
-            rel="noopener noreferrer" class="navigate">Портфолио</a>
+            rel="noopener noreferrer" class="navigate current">Портфолио</a>
           </li>
           <li class="page-nav__list">
             <a href="#" class="navigate">Контакты</a>
@@ -68,10 +68,10 @@
         </button>
         <ul>
           <li class="mobile-menu__list">
-            <a href="./index.html" class="navigate current">Студия</a>
+            <a href="./index.html" class="navigate">Студия</a>
           </li>
           <li class="mobile-menu__list">
-            <a href="./portfolio.html" class="navigate">Портфолио</a>
+            <a href="./portfolio.html" class="navigate  current">Портфолио</a>
           </li>
           <li class="mobile-menu__list">
             <a href="" class="navigate">Контакты</a>
@@ -127,19 +127,19 @@
                   <button type="button" class="portfolio-button current">
                     Все</button>
                 </li>
-                <li class="portfolio-list">
+                <li class="portfolio-menu__list">
                   <button type="button" class="portfolio-button">
                     Веб-сайты</button>
                 </li>
-                <li class="portfolio-list">
+                <li class="portfolio-menu__list">
                   <button type="button" class="portfolio-button">
                     Приложения</button>
                 </li>
-                <li class="portfolio-list">
+                <li class="portfolio-menu__list">
                   <button type="button" class="portfolio-button">
                     Дизайны</button>
                 </li>
-                <li class="portfolio-list">
+                <li class="portfolio-menu__list">
                   <button type="button" class="portfolio-button">
                     Маркетинг</button>
                 </li>
@@ -149,7 +149,19 @@
               <li>
                 <a href="" class="portfolio-main-menu__link">
                   <div class="list-img-wrapper">
-                    <img src="./img/portfolio/web-site.jpg" alt="Веб-сайты">
+                    <picture>
+                      <source 
+                      srcset="./img/desktop/portfolio/web-site.jpg 1x, ./img/desktop/portfolio/web-site2x.jpg 2x" 
+                      media="(min-width: 1200px)" />
+                      <source 
+                      srcset="./img/img-tablet/portfolio/web-site-tab.jpg 1x, ./img/img-tablet/portfolio/web-site-tab2x.jpg 2x" 
+                      media="(min-width: 768px)" />
+                      <source 
+                      srcset="./img/mobile-img/portfolio/web-site-mobile.jpg 1x, ./img/mobile-img/portfolio/web-site-mobile2x.jpg 2x" 
+                      media="(max-width: 767px)" />
+                      <img src="./img/desktop/portfolio/web-site.jpg" alt="Веб-сайты">
+                    </picture>
+
                     <p class="overlay">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                     </p>
@@ -163,7 +175,18 @@
               <li class="main-list">
                <a href="" class="portfolio-main-menu__link">
                 <div class="list-img-wrapper">
-                  <img src="./img/portfolio/new-orlean-golden-star.jpg" alt="New Orlean vs Golden Star">
+                  <picture>
+                    <source 
+                    srcset="./img/desktop/portfolio/new-orlean-golden-star.jpg 1x, ./img/desktop/portfolio/new-orlean-golden-star2x.jpg 2x" 
+                    media="(min-width: 1200px)" />
+                    <source 
+                    srcset="./img/img-tablet/portfolio/new-orlean-golden-star-tab.jpg 1x, ./img/img-tablet/portfolio/new-orlean-golden-star-tab2x.jpg 2x" 
+                    media="(min-width: 768px)" />
+                    <source 
+                    srcset="./img/mobile-img/portfolio/new-orlean-golden-star-mobile.jpg 1x, ./img/mobile-img/portfolio/new-orlean-golden-star-mobile2x.jpg 2x" 
+                    media="(max-width: 767px)" />
+                  <img src="./img/desktop/portfolio/new-orlean-golden-star.jpg" alt="New Orlean vs Golden Star">
+                  </picture>
                   <p class="overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                   </p>
@@ -178,7 +201,19 @@
               <li class="main-list">
                 <a href="" class="portfolio-main-menu__link">
                   <div class="list-img-wrapper">
-                    <img src="./img/portfolio/seafood.jpg" alt="логотип ресторана">
+                    <picture>
+                      <source 
+                      srcset="./img/desktop/portfolio/seafood.jpg 1x, ./img/desktop/portfolio/seafood2x.jpg 2x" 
+                      media="(min-width: 1200px)" />
+                      <source 
+                      srcset="./img/img-tablet/portfolio/seafood-tab.jpg 1x, ./img/img-tablet/portfolio/seafood-tab2x.jpg 2x" 
+                      media="(min-width: 768px)" />
+                      <source 
+                      srcset="./img/mobile-img/portfolio/seafood-mobile.jpg 1x, ./img/mobile-img/portfolio/seafood-mobile2x.jpg 2x" 
+                      media="(max-width: 767px)" />
+                    <img src="./img/desktop/portfolio/seafood.jpg" alt="логотип ресторана">
+                      
+                    </picture>
                     <p class="overlay">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                     </p>
@@ -194,7 +229,19 @@
               <li class="main-list">
                 <a href="" class="portfolio-main-menu__link">
                   <div class="list-img-wrapper">
-                    <img src="./img/portfolio/prime.jpg" alt="Наушники">
+                    <picture>
+                      <source 
+                      srcset="./img/desktop/portfolio/prime.jpg 1x, ./img/desktop/portfolio/prime2x.jpg 2x" 
+                      media="(min-width: 1200px)" />
+                      <source 
+                      srcset="./img/img-tablet/portfolio/prime-tab.jpg 1x, ./img/img-tablet/portfolio/prime-tab2x.jpg 2x" 
+                      media="(min-width: 768px)" />
+                      <source 
+                      srcset="./img/mobile-img/portfolio/prime-mobile.jpg 1x, ./img/mobile-img/portfolio/prime-mobile2x.jpg 2x" 
+                      media="(max-width: 767px)" />
+                    <img src="./img/desktop/portfolio/prime.jpg" alt="Наушники">
+                      
+                    </picture>
                     <p class="overlay">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                     </p>
@@ -211,7 +258,19 @@
                 
                   <a href="" class="portfolio-main-menu__link">
                     <div class="list-img-wrapper">
-                      <img src="./img/portfolio/boxes.jpg" alt="Проект Boxes">
+                      <picture>
+                      <source 
+                      srcset="./img/desktop/portfolio/boxes.jpg 1x, ./img/desktop/portfolio/boxes2x.jpg 2x" 
+                      media="(min-width: 1200px)" />
+                      <source 
+                      srcset="./img/img-tablet/portfolio/boxes-tab.jpg 1x, ./img/img-tablet/portfolio/boxes-tab2x.jpg 2x" 
+                      media="(min-width: 768px)" />
+                      <source 
+                      srcset="./img/mobile-img/portfolio/boxes-mobile.jpg 1x, ./img/mobile-img/portfolio/boxes-mobile2x.jpg 2x" 
+                      media="(max-width: 767px)" />
+                      <img src="./img/desktop/portfolio/boxes.jpg" alt="Проект Boxes">
+                      
+                    </picture>
                       <p class="overlay">
                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                       </p>
@@ -227,7 +286,19 @@
               <li class="main-list">
                 <a href="" class="portfolio-main-menu__link">
                   <div class="list-img-wrapper">
-                    <img src="./img/portfolio/inspiration-has-no-borders.jpg" alt=" лого компьютер">
+                    <picture>
+                      <source 
+                      srcset="./img/desktop/portfolio/inspiration-has-no-borders.jpg 1x, ./img/desktop/portfolio/inspiration-has-no-borders2x.jpg 2x" 
+                      media="(min-width: 1200px)" />
+                      <source 
+                      srcset="./img/img-tablet/portfolio/inspiration-has-no-borders-tab.jpg 1x, ./img/img-tablet/portfolio/inspiration-has-no-borders-tab2x.jpg 2x" 
+                      media="(min-width: 768px)" />
+                      <source 
+                      srcset="./img/mobile-img/portfolio/inspiration-has-no-borders-mobile.jpg 1x, ./img/mobile-img/portfolio/inspiration-has-no-borders-mobile2x.jpg 2x" 
+                      media="(max-width: 767px)" />
+                    <img src="./img/desktop/portfolio/inspiration-has-no-borders.jpg" alt=" лого компьютер">
+                      
+                    </picture>
                     <p class="overlay">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                     </p>
@@ -243,7 +314,19 @@
               <li class="main-list">
                 <a href="" class="portfolio-main-menu__link">
                   <div class="list-img-wrapper">
-                    <img src="./img/portfolio/limited-edition.jpg" alt="Книга">
+                    <picture>
+                      <source 
+                      srcset="./img/desktop/portfolio/limited-edition.jpg 1x, ./img/desktop/portfolio/limited-edition2x.jpg 2x" 
+                      media="(min-width: 1200px)" />
+                      <source 
+                      srcset="./img/img-tablet/portfolio/limited-edition-tab.jpg 1x, ./img/img-tablet/portfolio/limited-edition-tab2x.jpg 2x" 
+                      media="(min-width: 768px)" />
+                      <source 
+                      srcset="./img/mobile-img/portfolio/limited-edition-mobile.jpg 1x, ./img/mobile-img/portfolio/limited-edition-mobile2x.jpg 2x" 
+                      media="(max-width: 767px)" />
+                    <img src="./img/desktop/portfolio/limited-edition.jpg" alt="Книга">
+                      
+                    </picture>
                     <p class="overlay">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                     </p>
@@ -259,7 +342,19 @@
               <li class="main-list">
                 <a href="" class="portfolio-main-menu__link">
                   <div class="list-img-wrapper">
-                    <img src="./img/portfolio/project-lab.jpg" alt="Бирка">
+                    <picture>
+                      <source 
+                      srcset="./img/desktop/portfolio/project-lab.jpg 1x, ./img/desktop/portfolio/project-lab2x.jpg 2x" 
+                      media="(min-width: 1200px)" />
+                      <source 
+                      srcset="./img/img-tablet/portfolio/project-lab-tab.jpg 1x, ./img/img-tablet/portfolio/project-lab-tab2x.jpg 2x" 
+                      media="(min-width: 768px)" />
+                      <source 
+                      srcset="./img/mobile-img/portfolio/project-lab-mobile.jpg 1x, ./img/mobile-img/portfolio/project-lab-mobile2x.jpg 2x" 
+                      media="(max-width: 767px)" />
+                    <img src="./img/desktop/portfolio/project-lab.jpg" alt="Бирка">
+                      
+                    </picture>
                     <p class="overlay">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                     </p>
@@ -275,7 +370,19 @@
               <li class="main-list">
                 <a href="" class="portfolio-main-menu__link">
                   <div class="list-img-wrapper">
-                    <img src="./img/portfolio/growing-business.jpg" alt="Growing Business">
+                    <picture>
+                      <source 
+                      srcset="./img/desktop/portfolio/growing-business.jpg 1x, ./img/desktop/portfolio/growing-business2x.jpg 2x" 
+                      media="(min-width: 1200px)" />
+                      <source 
+                      srcset="./img/img-tablet/portfolio/growing-business-tab.jpg 1x, ./img/img-tablet/portfolio/growing-business-tab2x.jpg 2x" 
+                      media="(min-width: 768px)" />
+                      <source 
+                      srcset="./img/mobile-img/portfolio/growing-business-mobile.jpg 1x, ./img/mobile-img/portfolio/growing-business-mobile2x.jpg 2x" 
+                      media="(max-width: 767px)" />
+                    <img src="./img/desktop/portfolio/growing-business.jpg" alt="Growing Business">
+                      
+                    </picture>
                     <p class="overlay">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                     </p>

@@ -106,7 +106,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .container {
-    max-width: 450px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -693,7 +693,7 @@ button:hover, button:focus {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/hero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/desktop/hero.jpg);
     height: 600px;
     padding: 200px 0;
   }
@@ -1186,10 +1186,6 @@ button:hover, button:focus {
   margin-bottom: 40px;
 }
 
-.portfolio-menu__list:not(:last-child) {
-  margin-right: 8px;
-}
-
 .navigate.current {
   color: var(--main-color);
 }
@@ -1229,7 +1225,7 @@ button:hover, button:focus {
 .portfolio-main-menu__title {
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--accent-color);
@@ -1282,5 +1278,17 @@ button:hover, button:focus {
     flex-wrap: wrap;
     row-gap: 15px;
     column-gap: 8px;
+  }
+  .portfolio-menu__list:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-menu {
+    flex-wrap: wrap;
+    gap: 15px;
+    column-gap: 8px;
+    justify-content: center;
+    margin-bottom: 50px;
   }
 }/*# sourceMappingURL=main.css.map */
