@@ -507,6 +507,7 @@ button:hover, button:focus {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.19;
+  padding: 25px 0;
 }
 
 .page-nav__logo {
@@ -563,7 +564,6 @@ button:hover, button:focus {
     display: block;
     width: 100%;
     height: 4px;
-    margin-bottom: -4px;
     background-color: var(--main-color);
     border-radius: 2px;
     position: absolute;
