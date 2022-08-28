@@ -43,7 +43,7 @@
     .portfolio-main-menu__title{
       font-style: normal;
       font-weight: 700;
-      font-size: 17px;
+      font-size: 18px;
       line-height: 2;
       letter-spacing: 0.06em;
       color: var(--accent-color);
@@ -114,6 +114,16 @@
       column-gap: 8px;
       justify-content: center;
       margin-bottom: 50px;}
-  
+    .main-list{
+      width: calc(100% /2 - 30px);
+    }
+      }
+
+      @media screen and (min-width:1200px){
+        .main-list{
+          width:auto;
+        }
+
+
       }
    

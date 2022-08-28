@@ -507,7 +507,6 @@ button:hover, button:focus {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.19;
-  padding: 25px 0;
 }
 
 .page-nav__logo {
@@ -516,6 +515,7 @@ button:hover, button:focus {
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.03em;
+  padding: 25px 0;
 }
 
 .page-nav__logo__black {
@@ -528,6 +528,9 @@ button:hover, button:focus {
   }
   .page-nav-contact {
     display: none;
+  }
+  .head-block {
+    border-bottom: 1px solid #ECECEC;
   }
   .mobile-menu-open {
     background-color: transparent;
@@ -572,6 +575,9 @@ button:hover, button:focus {
   }
   .head-block {
     border-bottom: 1px solid #ECECEC;
+  }
+  .head-contact {
+    font-size: 12px;
   }
   .container-page-header {
     display: flex;
@@ -634,6 +640,11 @@ button:hover, button:focus {
     margin-right: 10px;
     fill: currentColor;
   }
+  .head-contact {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 .hero {
   background-color: #2F303A;
@@ -641,13 +652,13 @@ button:hover, button:focus {
   width: 100%;
   padding: 118px 0;
   text-align: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/mobile-img/header-mobile.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mobile-img/header-mobile.jpg);
   background-size: cover;
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/mobile-img/header-mobile2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mobile-img/header-mobile2x.jpg);
   }
 }
 .hero-title {
@@ -683,17 +694,17 @@ button:hover, button:focus {
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/img-tablet/header-tab.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/img-tablet/header-tab.jpg);
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/img-tablet/header-tab2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/img-tablet/header-tab2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/desktop/hero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desktop/hero.jpg);
     height: 600px;
     padding: 200px 0;
   }
@@ -706,7 +717,7 @@ button:hover, button:focus {
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/desktop/hero2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desktop/hero2x.jpg);
     height: 600px;
     padding: 200px 0;
   }
@@ -914,9 +925,6 @@ button:hover, button:focus {
   .team-block__img {
     width: 270px;
     height: 260px;
-  }
-  .team-list {
-    margin-bottom: 43px;
   }
   .team {
     font-size: 36px;
@@ -1225,7 +1233,7 @@ button:hover, button:focus {
 .portfolio-main-menu__title {
   font-style: normal;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--accent-color);
@@ -1291,5 +1299,13 @@ button:hover, button:focus {
     column-gap: 8px;
     justify-content: center;
     margin-bottom: 50px;
+  }
+  .main-list {
+    width: calc(50% - 30px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-list {
+    width: auto;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -21,7 +21,7 @@
   color: var(--main-color);
   font-family: 'Raleway', sans-serif;
   @include font (24px, 700, 1.19);
-  padding: 25px 0;}
+  }
 
 .page-nav__logo{
   margin-right: 88px;
@@ -29,7 +29,7 @@
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.03em;
-
+  padding: 25px 0;
 }
 .page-nav__logo__black{
   color: #000000;
@@ -45,6 +45,9 @@
   .page-nav-contact{
   display: none;
   }
+  .head-block{
+    border-bottom: 1px solid #ECECEC;
+    }
   .mobile-menu-open{
     background-color: transparent;
     border: none;
@@ -95,7 +98,9 @@
   .head-block{
     border-bottom: 1px solid #ECECEC;
     }
-    
+    .head-contact{
+      font-size: 12px;
+    }
     .container-page-header{
       display: flex;
       align-items: center;
@@ -155,5 +160,10 @@
     .head-contact__mail{
       margin-right: 10px;
       fill: currentColor;
+    }
+    .head-contact{
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
     }
 }
