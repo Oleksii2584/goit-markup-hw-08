@@ -244,6 +244,7 @@ img {
 .mobail-menu-social {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .mobile-menu-social__list {
