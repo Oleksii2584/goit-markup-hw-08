@@ -1301,7 +1301,15 @@ button:hover, button:focus {
     margin-bottom: 50px;
   }
   .main-list {
-    width: calc(50% - 30px);
+    width: calc(50% - 15px);
+  }
+  .portfolio-main-menu__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .portfolio-main-menu__info {
+    flex-grow: 1;
   }
 }
 @media screen and (min-width: 1200px) {

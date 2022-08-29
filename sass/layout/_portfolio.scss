@@ -115,7 +115,16 @@
       justify-content: center;
       margin-bottom: 50px;}
     .main-list{
-      width: calc(100% /2 - 30px);
+      width: calc(100% /2 - 15px);
+    }
+    .portfolio-main-menu__link{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+
+    }
+    .portfolio-main-menu__info{
+      flex-grow: 1;
     }
       }
 
