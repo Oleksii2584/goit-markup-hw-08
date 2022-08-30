@@ -35,10 +35,17 @@ transition: fill var(--transition);
         }
 }
 
-@media screen and( max-width: 1199px) {
+@media screen and( max-width: 450px) {
+  .modal{
+    width: 100%;
+  }
+  
+}
+
+
+@media screen and ( min-width: 451px) and( max-width: 1199px) {
   .modal{
     width: 450px;
-    // height: 609px;}
   }
   
 }
